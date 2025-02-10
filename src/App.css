@@ -1,0 +1,149 @@
+/* Estilos generales */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #393f40, #a5abad);
+  color: #fff;
+  min-height: 100vh;
+}
+
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px 20px;
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.navbar-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-search input {
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  width: 300px;
+  text-align: center;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-info {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.navbar-title {
+  margin: 0;
+  font-size: 1.5rem;
+  cursor: pointer;
+  position: absolute;
+  left: 20px;
+}
+
+.navbar-title:hover {
+  color: #007BFF;
+}
+
+/* Resto de los estilos (clima, pronóstico, mapa, etc.) */
+.error {
+  color: #ff6b6b;
+  text-align: center;
+  margin-top: 80px; /* Ajuste para el Navbar fijo */
+}
+
+.weather-card {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 20px;
+  backdrop-filter: blur(10px);
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 80px; /* Ajuste para el Navbar fijo */
+}
+
+.weather-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.weather-info img {
+  width: 80px;
+  height: 80px;
+}
+
+.temperature {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.description {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+/* Pronóstico extendido */
+.forecast {
+  margin-top: 20px;
+  text-align: center;
+  width: 90%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.forecast h3 {
+  margin-bottom: 20px;
+}
+
+.forecast-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+.forecast-card {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+}
+
+.forecast-card img {
+  width: 50px;
+  height: 50px;
+}
+
+/* Mapa */
+#map {
+  height: 300px;
+  width: 90%;
+  max-width: 1000px;
+  margin: 20px auto;
+  border-radius: 8px;
+  overflow: hidden;
+}
+

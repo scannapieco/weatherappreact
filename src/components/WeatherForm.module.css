@@ -1,0 +1,33 @@
+/* WeatherForm.module.css */
+.form {
+    display: flex;
+    gap: 10px; /* Espacio entre el input y el botón */
+}
+
+.input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    flex: 1; /* Ocupa el espacio disponible */
+}
+
+.button {
+    background-color: orange; /* Fondo naranja */
+    color: white;             /* Texto blanco */
+    border: none;             /* Sin borde */
+    padding: 10px 20px;       /* Espaciado interno */
+    border-radius: 5px;       /* Bordes redondeados */
+    cursor: pointer;          /* Cursor tipo puntero */
+    display: flex;            /* Flexbox para alinear ícono y texto */
+    align-items: center;     /* Centrar verticalmente */
+    font-size: 16px;          /* Tamaño de fuente */
+}
+
+.button:hover {
+    background-color: darkorange; /* Cambia el color al pasar el mouse */
+}
+
+.button span {
+    margin-left: 10px; /* Espacio entre el texto y la flecha */
+}

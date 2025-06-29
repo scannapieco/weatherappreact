@@ -155,7 +155,7 @@ const App = () => {
       {weatherData && weatherData.coord && (
         <Map lat={weatherData.coord.lat} lon={weatherData.coord.lon} />
       )}
-       {/* Footer */}
+        {/* Footer con enlaces a GitHub y LinkedIn */}
       <footer className="footer">
         <span>
           Hecho por Diego Garcia &nbsp;|&nbsp;
